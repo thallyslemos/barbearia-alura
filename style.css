@@ -1,3 +1,18 @@
-p {
+body {
+        background: #CCCCCC
+    }
+#banner{
+        width: 100%;
+    }
+h1 {
     text-align: center
+    }
+    p {
+    text-align: center; color: rgb(255,0,0)
+    }
+    #missao {
+        font-size: 20px
+    }
+em strong {
+        color:blueviolet
     }
