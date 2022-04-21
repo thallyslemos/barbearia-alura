@@ -1,25 +1,54 @@
 header {
     background: #BBBBBB;
-    padding: 20px 0;
+    padding: 20px 0;      /*  Espaçamento interno de 20 px*/
 }
 .caixa{
     position: relative;
     width: 940px;
-   margin: 0 auto;
+   margin: 0 auto; /*  margens laterais automáticas*/
 }
 nav {
     position: absolute;
-    top: 110px;
+    top: 110px;         /*  localização do conteudo de navegação*/
     right: 0px;
 } 
 nav li {
-    display: inline;
+    display: inline;        /*  adicionando espeçamento à esquerda usando margin para os itens da lista*/
     margin: 0 0 0 15px;
 }
 nav a {
     text-transform: uppercase;
     color: #000000;
-    font-weight: bold;
+    font-weight: bold;          /*  propriedades do texto dos lins ancoras*/
     font-size: 22px;
     text-decoration: none;
    }
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align:top;
+    margin:0 1.5%;
+    padding: 30px 20px; /* isso aumentará o tamanho do elemento, a menos que se use a propriedade a baixo*/
+    box-sizing: border-box; /* tornou os 30% definitivos e o espaço de 20 e 30px ficarao dentro da caixa */
+    border: #000000 2px solid;
+    border-radius: 10px;
+    
+}
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.produto-descricao {
+    font-size: 18px;
+}
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px; /* forma simplificada de escrever "margin: 10px 0 0;" */ 
+}
