@@ -23,6 +23,10 @@ nav a {
     font-size: 22px;
     text-decoration: none;
    }
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
 .produtos{
     width: 940px;
     margin: 0 auto;
@@ -37,8 +41,16 @@ nav a {
     padding: 30px 20px; /* isso aumentará o tamanho do elemento, a menos que se use a propriedade a baixo*/
     box-sizing: border-box; /* tornou os 30% definitivos e o espaço de 20 e 30px ficarao dentro da caixa */
     border: #000000 2px solid;
-    border-radius: 10px;
-    
+    border-radius: 10px; 
+}
+.produtos li:hover {
+    border-color:#C78C19; /* muda as carateríscas ao passar o mouse por cima*/
+}
+.produtos li:active {
+    border-color:#088C19;/* muda as carateríscas ao clicar*/
+}
+.produtos li:hover h2 {/* muda as carateríscasde uma parte específica*/
+    font-size: 34px;
 }
 .produtos h2{
     font-size: 30px;
@@ -51,4 +63,14 @@ nav a {
     font-size: 22px;
     font-weight: bold;
     margin-top: 10px; /* forma simplificada de escrever "margin: 10px 0 0;" */ 
+}
+footer {
+    text-align: center;
+    background:url("bg.jpg");
+    padding: 40px 0;
+}
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px 0 0;
 }
