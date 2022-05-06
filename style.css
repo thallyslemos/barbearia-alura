@@ -1,41 +1,251 @@
 body {
-      
-    }
-#banner{
-        width: 100%;
-    }
-.principal {
-    background: #CCCCCC;
-    padding: 30px;
-    }
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    background: #BBBBBB;
+    padding: 20px 0;      /*  Espaçamento interno de 20 px*/
+    box-shadow:inset 0 0 10px black ;
+}
+.caixa{
+    position: relative;
+    width: 940px;
+   margin: 0 auto; /*  margens laterais automáticas*/
+}
+nav {
+    position: absolute;
+    top: 110px;         /*  localização do conteudo de navegação*/
+    right: 0px;
+} 
+nav li {
+    display: inline;        /*  adicionando espeçamento à esquerda usando margin para os itens da lista*/
+    margin: 0 0 0 15px;
+}
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;          /*  propriedades do texto dos lins ancoras*/
+    font-size: 22px;
+    text-decoration: none;
+   }
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+/*CSS da página produtos */
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align:top;
+    margin:0 1.5%;
+    padding: 30px 20px; /* isso aumentará o tamanho do elemento, a menos que se use a propriedade a baixo*/
+    box-sizing: border-box; /* tornou os 30% definitivos e o espaço de 20 e 30px ficarao dentro da caixa */
+    border: #000000 2px solid;
+    border-radius: 10px; 
+}
+.produtos li:hover {
+    border-color:#C78C19; /* muda as carateríscas ao passar o mouse por cima*/
+}
+.produtos li:active {
+    border-color:#088C19;/* muda as carateríscas ao clicar*/
+}
+.produtos li:hover h2 {/* muda as carateríscasde uma parte específica*/
+    font-size: 34px;
+}
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.produto-descricao {
+    font-size: 18px;
+}
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px; /* forma simplificada de escrever "margin: 10px 0 0;" */ 
+}
+footer {
+    text-align: center;
+    background:url("bg.jpg");
+    padding: 40px 0;
+}
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+/*CSS página de Contato*/
+
+.formulario {
+    margin: 0 auto;
+}
+form {
+    padding: 50px;
+    margin: 0 auto;
+    background: linear-gradient(#ffffff, #f0f0f0);
+}
+form label,form legend {
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+    cursor:pointer;
+}
+.input-padrao {
+    display:block;
+    margin: 0 0 20px;
+    padding:10px 25px;
+    width: 50%;
+}
+.checkbox {
+    margin: 20px 0;
+}
+.enviar {
+    width:40%;
+    padding: 15px 0;
+    background: orange;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    transition:1s all;
+    cursor:pointer;
+}
+.enviar:hover {
+    background: red;
+    transform: scale(1.2) rotate(5deg);
+    
+}
+table {
+    margin: 0 auto;
+    padding: 40px;
+}
+.tabela {
+    background: linear-gradient(#f0f0f0, #171819);
+    padding: 40px;
+
+}
+thead {
+    background: #555555;
+    color:white;
+    font-weight: bold;
+}
+td, th {
+    border: 1px solid black;
+    padding: 15px 8px;
+}
+/* css da página inicial*/
+.banner {
+    width: 100%;
+}
 .titulo-principal {
-    padding-left: 20px;
-    }
-.titulo-centralizado {
-    text-align: center
-    }
-p {
-    text-align: center
-    }
-#missao {
-    font-size: 20px
-    }
-em strong {
-    color:blueviolet
-    }
-.item {
-    font-style: italic
-    }
+    text-align: center;
+    font-size:2em;
+    margin: 0 0 1em;
+    clear: left;
+    color: rgba(0, 0, 0, 0.7); /* Usando opacidade diretamente na cor do elemento */
+    text-shadow: 2px 2px 3px #555555; /* Sombra em texto */
+}
+.titulo-principal:first-line {
+    font-weight:bold;
+}
+.principal {
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+
+} 
+.principal p {
+    margin: 0 0 1em;
+}
+.principal strong {
+    font-weight: bold;
+}
+.principal en {
+    font-style: italic;
+}
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.mapa {
+    padding: 3em 0;
+    background:linear-gradient(#fefefe, #888888) ;
+}
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto; 
+
+}
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
 .beneficios {
-    background:white
-    padding: 20px;
-    }
-ul {
+    padding: 3em 0;
+    background:linear-gradient(#888888, #171918);
+}
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+.lista-beneficios {
+    width: 40%;
     display: inline-block;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
-    }
-#beneficios {
-    width: 50%
 }
+.imgbeneficios {
+    width: 59%;
+    opacity: 1;
+    transition: 400ms; /* Tempo de transição da opacidade */
+    box-shadow: 10px 10px 10px;
+}
+.imgbeneficios:hover {  /* Usando opacidade no elemento ao passar o mouse por cima dele */
+    opacity: 0.3;
+
+}
+.item {
+    line-height: 1.5;
+}
+.item:first-child {
+    font-weight: bold;
+}
+.item:before {
+    content: "✯"
+}
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .mapa-conteudo, .conteudo-beneficios, .video, .enviar, .produtos li{
+        width: auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+   .imgbeneficios, .lista-beneficios, .produtos {
+       width:100%;
+   }
+   .produtos {
+       text-align: center;
+       padding: 0;
+       margin: auto;
+       position: static;
+   }
+   .produtos li{
+       margin: 2% 2%;
+   }
+}
+
+
